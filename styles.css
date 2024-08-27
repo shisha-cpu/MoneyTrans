@@ -1,0 +1,290 @@
+/* Основные стили для body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #eee;
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out 0.5s;
+}
+
+.cta-button {
+    background: #f60;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e55d00;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.feature:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.feature:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.feature:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Services Section */
+.services-section {
+    padding: 60px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.services-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.service {
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.service:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.service:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.service:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.service:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.how-it-works-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.step:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.step:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.step:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.step:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 60px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.testimonial:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.testimonial:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#contact-form button {
+    background: #f60;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: #e55d00;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social {
+    margin: 10px 0;
+}
+
+.social-icon {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer{
+    border-radius: 20px;
+}

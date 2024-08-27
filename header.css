@@ -1,0 +1,100 @@
+
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #00ff99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+ 
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+}
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #00ff99;
+    display: inline-block;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: color 0.3s, background 0.3s;
+}
+
+header nav ul li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #00ff99;
+    transition: width 0.3s;
+}
+
+header nav ul li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+header nav ul li a:hover {
+    background: rgba(0, 255, 153, 0.2);
+    color: #00ff99;
+}
+
+/* Анимация для header */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 15px #00ff99, 0 0 20px #00ff99, 0 0 25px #00ff99, 0 0 30px #00ff99, 0 0 35px #00ff99;
+    }
+    50% {
+        text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00ff99, 0 0 40px #00ff99, 0 0 50px #00ff99, 0 0 60px #00ff99, 0 0 70px #00ff99;
+    }
+    100% {
+        text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 15px #00ff99, 0 0 20px #00ff99, 0 0 25px #00ff99, 0 0 30px #00ff99, 0 0 35px #00ff99;
+    }
+}
+
+header .logo {
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+@media (max-width : 850px) {
+    .header-container{
+        display: block;
+
+    }
+    .header nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
