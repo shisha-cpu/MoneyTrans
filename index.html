@@ -81,6 +81,31 @@
         </div>
     </section>
 
+    <section id="currency-calculator" class="currency-calculator-section">
+        <div class="container">
+            <h2>Калькулятор валют</h2>
+            <div class="calculator">
+                <input type="number" id="amount" placeholder="Сумма" />
+                <select id="from-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <!-- Добавьте другие валюты по необходимости -->
+                </select>
+                <span>в</span>
+                <select id="to-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <!-- Добавьте другие валюты по необходимости -->
+                </select>
+                <button id="convert-button">Конвертировать</button>
+                <div id="result" class="result">
+                    <p>Результат: <span id="conversion-result">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
     
 
     <!-- <section id="testimonials" class="testimonials-section">
@@ -109,7 +134,7 @@
             <p>&copy; 2024 MoneyTrans. Все права защищены.</p>
         </div>
     </footer>
-
+    <script src="scrypt.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
