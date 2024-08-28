@@ -15,13 +15,24 @@ body {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero-section {
-    background: url('hero-bg.jpg') no-repeat center center;
-    background-size: cover;
+    background: linear-gradient(135deg, #000 50%, #1a1a1a 50%);
+    background-size: 200% 200%;
+    animation: bgMove 15s linear infinite;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
     position: relative;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .hero-content {
@@ -49,11 +60,27 @@ body {
     border-radius: 5px;
     font-size: 1.1rem;
     transition: background 0.3s;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
 }
 
 .cta-button:hover {
     background: #e55d00;
 }
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* About Section */
 .about-section {
